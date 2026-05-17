@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto - Xeque-Mate PUB</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link rel="stylesheet" href="contacto.css">
+</head>
+<body>
+  <header id="navbar">
+    <a href="index.html" class="logo"><img src="logobg.png" alt="Logo Xeque-Mate"></a>
+    <nav class="nav-menu">
+      <ul class="nav-list">
+        <li><a href="index.html#inicio">Início</a></li>
+        <li><a href="index.html#vantagens">Vantagens</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+        <li><a href="sobre.html">Sobre nós</a></li>
+      </ul>
+    </nav>
+    <div class="menu-toggle">
+      <i class="fas fa-bars"></i>
+    </div>    
+  </header>
+
+  <div class="contacto-header">
+    <h1>📞 Contacte-nos</h1>
+    <p>Estamos à sua espera! Entre em contacto para reservas, dúvidas ou sugestões.</p>
+  </div>
+
+  <div class="contacto-container">
+    <!-- Informações de Contacto -->
+    <div class="contacto-info">
+      <h2><i class="fas fa-address-card"></i> Informações de Contacto</h2>
+      
+      <div class="info-item">
+        <i class="fas fa-map-marker-alt"></i>
+        <div>
+          <h3>Endereço</h3>
+          <p>Av. Samora Machel, 284, Quelimane, Moçambique</p>
+        </div>
+      </div>
+      
+      <div class="info-item">
+        <i class="fas fa-phone-alt"></i>
+        <div>
+          <h3>Telefone</h3>
+          <p><a href="tel:856797652">+258 85 679 7652</a></p>
+        </div>
+      </div>
+      
+      <div class="info-item">
+        <i class="fab fa-whatsapp"></i>
+        <div>
+          <h3>WhatsApp</h3>
+          <p><a href="https://wa.me/258869378289">+258 86 937 8289</a></p>
+        </div>
+      </div>
+      
+      <div class="info-item">
+        <i class="fas fa-clock"></i>
+        <div>
+          <h3>Horário de Funcionamento</h3>
+          <p>Segunda a Domingo: 08:00 - 00:00</p>
+          <p>Happy Hour: 17:00 - 20:00</p>
+        </div>
+      </div>
+      
+      <div class="info-item">
+        <i class="fas fa-envelope"></i>
+        <div>
+          <h3>Email</h3>
+          <p><a href="mailto:restaurantexequemate@gmail.com">restaurantexequemate@gmail.com</a></p>
+        </div>
+      </div>
+
+      <div class="social-contacto">
+        <h3>Siga-nos nas redes sociais</h3>
+        <div class="social-links">
+          <a href="https://www.facebook.com/61550971076592/" target="_blank"><i class="fab fa-facebook"></i> Facebook</a>
+          <a href="https://www.instagram.com/rest.xeque_mate_oficial" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Formulário de Contacto -->
+    <div class="contacto-form">
+      <h2><i class="fas fa-paper-plane"></i> Envie-nos uma mensagem</h2>
+      <form id="formContato" action="#" method="POST">
+        <div class="form-group">
+          <label for="nome"><i class="fas fa-user"></i> Nome completo *</label>
+          <input type="text" id="nome" name="nome" required>
+        </div>
+        
+        <div class="form-row">
+          <div class="form-group">
+            <label for="email"><i class="fas fa-envelope"></i> Email *</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+          <div class="form-group">
+            <label for="telefone"><i class="fas fa-phone"></i> Telefone</label>
+            <input type="tel" id="telefone" name="telefone">
+          </div>
+        </div>
+        
+        <div class="form-group">
+          <label for="assunto"><i class="fas fa-tag"></i> Assunto *</label>
+          <select id="assunto" name="assunto" required>
+            <option value="">Selecione...</option>
+            <option value="reserva">Fazer uma reserva</option>
+            <option value="informacao">Pedir informação</option>
+            <option value="sugestao">Dar uma sugestão</option>
+            <option value="reclamacao">Registar reclamação</option>
+            <option value="evento">Solicitar evento privado</option>
+            <option value="outro">Outro assunto</option>
+          </select>
+        </div>
+        
+        <div class="form-group">
+          <label for="mensagem"><i class="fas fa-comment"></i> Mensagem *</label>
+          <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+        </div>
+        
+        <div class="form-group">
+          <label for="data-reserva" id="label-data" style="display:none;">Data da reserva</label>
+          <input type="date" id="data-reserva" name="data-reserva" style="display:none;">
+        </div>
+        
+        <div class="form-group">
+          <label for="pessoas" id="label-pessoas" style="display:none;">Número de pessoas</label>
+          <select id="pessoas" name="pessoas" style="display:none;">
+            <option value="1">1 pessoa</option>
+            <option value="2">2 pessoas</option>
+            <option value="3">3 pessoas</option>
+            <option value="4">4 pessoas</option>
+            <option value="5">5 pessoas</option>
+            <option value="6">6+ pessoas</option>
+          </select>
+        </div>
+        
+        <button type="submit" class="btn-enviar"><i class="fas fa-paper-plane"></i> Enviar mensagem</button>
+      </form>
+      <div id="form-mensagem" style="margin-top: 20px; text-align: center;"></div>
+    </div>
+  </div>
+
+  <!-- Mapa -->
+  <div class="mapa-section">
+    <h2><i class="fas fa-map"></i> Como chegar</h2>
+    <div class="mapa-container">
+      <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15759.294080624977!2d36.878332!3d-17.878332!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x18f3e5a8b4c2d6e9%3A0x7a8b5c3d2e1f4a6b!2sAv.%20Samora%20Machel%2C%20284%2C%20Quelimane!5e0!3m2!1spt-pt!2smz!4v1700000000000!5m2!1spt-pt!2smz" 
+        width="100%" 
+        height="400" 
+        style="border:0;" 
+        allowfullscreen="" 
+        loading="lazy">
+      </iframe>
+    </div>
+  </div>
+
+  <footer>
+    <div class="social-icons">
+      <a href="https://www.facebook.com/61550971076592/" target="_blank"><i class="fab fa-facebook"></i></a>
+      <a href="https://www.instagram.com/rest.xeque_mate_oficial" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://wa.me/258856797652" target="_blank"><i class="fab fa-whatsapp"></i></a>
+    </div>
+    <p>&copy; 2024 Restaurante & Pub Xeque Mate Quelimane. Todos os direitos reservados.</p>
+  </footer>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      // Mobile menu
+      const menuToggle = document.querySelector('.menu-toggle');
+      const navMenu = document.querySelector('.nav-menu');
+      
+      if (menuToggle && navMenu) {
+        menuToggle.addEventListener('click', function(e) {
+          e.stopPropagation();
+          navMenu.classList.toggle('active');
+          const icon = menuToggle.querySelector('i');
+          if (navMenu.classList.contains('active')) {
+            icon.classList.remove('fa-bars');
+            icon.classList.add('fa-times');
+          } else {
+            icon.classList.remove('fa-times');
+            icon.classList.add('fa-bars');
+          }
+        });
+      }
+      
+      // Mostrar campos extras para reserva
+      const assuntoSelect = document.getElementById('assunto');
+      const dataReserva = document.getElementById('data-reserva');
+      const pessoas = document.getElementById('pessoas');
+      const labelData = document.getElementById('label-data');
+      const labelPessoas = document.getElementById('label-pessoas');
+      
+      assuntoSelect.addEventListener('change', function() {
+        if (this.value === 'reserva') {
+          dataReserva.style.display = 'block';
+          pessoas.style.display = 'block';
+          labelData.style.display = 'block';
+          labelPessoas.style.display = 'block';
+        } else {
+          dataReserva.style.display = 'none';
+          pessoas.style.display = 'none';
+          labelData.style.display = 'none';
+          labelPessoas.style.display = 'none';
+        }
+      });
+      
+      // Processar formulário
+      const form = document.getElementById('formContato');
+      const formMensagem = document.getElementById('form-mensagem');
+      
+      form.addEventListener('submit', function(e) {
+        e.preventDefault();
+        
+        const nome = document.getElementById('nome').value;
+        const assunto = document.getElementById('assunto').value;
+        
+        // Preparar mensagem para WhatsApp
+        let mensagemWhatsApp = `Olá! Meu nome é ${nome}. `;
+        
+        if (assunto === 'reserva') {
+          const data = document.getElementById('data-reserva').value;
+          const qtdPessoas = document.getElementById('pessoas').options[document.getElementById('pessoas').selectedIndex].text;
+          mensagemWhatsApp += `Gostaria de fazer uma reserva para ${qtdPessoas} no dia ${data}. `;
+        } else {
+          const textoMsg = document.getElementById('mensagem').value;
+          mensagemWhatsApp += `${textoMsg}`;
+        }
+        
+        mensagemWhatsApp += ` Meu telefone: ${document.getElementById('telefone').value || 'não informado'}. Meu email: ${document.getElementById('email').value}`;
+        
+        // Codificar para URL
+        const mensagemCodificada = encodeURIComponent(mensagemWhatsApp);
+        
+        // Abrir WhatsApp
+        window.open(`https://wa.me/258856797652?text=${mensagemCodificada}`, '_blank');
+        
+        formMensagem.innerHTML = '<p style="color: #d4af37;">✓ Mensagem encaminhada! Em breve entraremos em contacto pelo WhatsApp.</p>';
+        form.reset();
+        
+        setTimeout(() => {
+          formMensagem.innerHTML = '';
+        }, 5000);
+      });
+    });
+  </script>
+</body>
+</html>
